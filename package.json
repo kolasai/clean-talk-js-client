@@ -1,0 +1,20 @@
+{
+  "name": "clean-talk-php-client",
+  "version": "1.0.0",
+  "description": "Welcome to the **Kolas.Ai Public API** documentation! This repository hosts the PHP client for Kolas.Ai's Clean Talk public API, making it easy for developers to integrate Kolas.Ai’s machine learning services into your applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-kolasai:kolasai/clean-talk-php-client.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
