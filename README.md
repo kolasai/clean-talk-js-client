@@ -35,7 +35,7 @@ NPMjs.com: [https://www.npmjs.com/package/@kolasai/clean-talk-client](https://ww
 This API uses **OAuth2 client credentials** for secure access. You’ll need to request a token using your client credentials from the Kolas.Ai platform.
 
 ```ts
-import { KolasAiOAuthClient } from 'clean-talk-client';
+import { KolasAiOAuthClient } from '@kolasai/clean-talk-client';
 
 const oauthClient = new KolasAiOAuthClient();
 const authResult = await oauthClient.auth(YOUR_CLIENT_ID, YOUR_CLIENT_SECRET);
@@ -48,7 +48,7 @@ const authResult = await oauthClient.auth(YOUR_CLIENT_ID, YOUR_CLIENT_SECRET);
 Once you have your access token, you can make a request like this:
 
 ```ts
-import { CleanTalkPredictionClient, PredictRequest, Message } from 'clean-talk-client';
+import { CleanTalkPredictionClient, PredictRequest, Message } from '@kolasai/clean-talk-client';
 
 const client = new CleanTalkPredictionClient(authResult.getAccessToken());
 const response = await client.predict(
@@ -90,7 +90,7 @@ Categories: Insult, Neutral, Spam
 Once you have your access token, you can make a request like this:
 
 ```ts
-import { PredictRequest, Message } from 'clean-talk-client';
+import { PredictRequest, Message } from '@kolasai/clean-talk-client';
 
 await client.asyncPredict(new PredictRequest(
     YOUR_PROJECT_ID,
