@@ -25,7 +25,7 @@ The Kolas.Ai API follows the OpenAPI 3.1 standard. To get started:
 You can install the CleanTalk JS client via Composer. Run the following command in your project directory:
 
 ```bash
-npm i clean-talk-client
+npm i @kolasai/clean-talk-client
 ```
 GitHub.com: [https://github.com/kolasai/clean-talk-js-client](https://github.com/kolasai/clean-talk-js-client)
 NPMjs.com: [https://www.npmjs.com/package/@kolasai/clean-talk-client](https://www.npmjs.com/package/@kolasai/clean-talk-client)
