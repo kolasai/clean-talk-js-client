@@ -8,6 +8,12 @@ import { ProjectDatasetNotConfiguredException } from './Exception/ProjectDataset
 import { ProjectNotActiveException } from './Exception/ProjectNotActiveException';
 import { ProjectNotFoundException } from './Exception/ProjectNotFoundException';
 
+interface ApiErrorResponse {
+    errorCode?: string;
+    message?: string;
+    errors?: any[];
+}
+
 export class CleanTalkPredictionClient {
     private static BASE_URL = 'https://app.kolas.ai';
     private static SYNC_PREDICT_ENDPOINT = 'api/v1/predictions/predict';
@@ -128,10 +134,10 @@ export class CleanTalkPredictionClient {
      * Creates and throws specific exceptions based on API error codes.
      */
     private createException(error: AxiosError): never {
-        const data = error.response?.data || {};
-        const code = data['errorCode'] ?? '0';
-        const message = data['message'] ?? 'Invalid request data.';
-        const errors = data['errors'] ?? [];
+        const data = (error.response?.data as ApiErrorResponse) || {};
+        const code = data.errorCode ?? '0';
+        const message = data.message ?? 'Invalid request data.';
+        const errors = data.errors ?? [];
 
         switch (code) {
             case ProjectNotFoundException.CODE:
