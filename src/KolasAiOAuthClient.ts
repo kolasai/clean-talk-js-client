@@ -9,10 +9,7 @@ export class KolasAiOAuthClient {
     private httpClient: AxiosInstance;
 
     constructor() {
-        this.httpClient = axios.create({
-            baseURL: KolasAiOAuthClient.BASE_URL,
-            timeout: 10000,
-        });
+        this.httpClient = axios.create({baseURL: KolasAiOAuthClient.BASE_URL});
     }
 
     /**
@@ -45,7 +42,7 @@ export class KolasAiOAuthClient {
 
             return AuthResult.fromObject(data);
         } catch (e: any) {
-            throw new CleanTalkException('Auth request failed.', e);
+            throw new CleanTalkException('OAuth authentication failed: ' + (e?.message || e), e);
         }
     }
 }

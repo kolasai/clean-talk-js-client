@@ -1,5 +1,4 @@
 import { CleanTalkException } from './Exception/CleanTalkException';
-import PredictRequest from "./PredictRequest";
 
 export class PredictionResult {
     private messageId: string;
@@ -32,11 +31,12 @@ export class PredictionResult {
             !data['messageId'] ||
             !data['message'] ||
             !data['prediction'] ||
-            typeof data['probability'] === 'undefined' ||
+            !data['probability'] ||
             !data['categories']
         ) {
             throw new CleanTalkException('Invalid data for PredictionResult');
         }
+
         return new PredictionResult(
             data['messageId'],
             data['message'],

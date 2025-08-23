@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --config jest.config.js",
     "build": "tsc"
   },
   "repository": {
@@ -32,6 +32,9 @@
     "axios": "^1.11.0"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.1",
     "typescript": "^5.9.2"
   }
 }
