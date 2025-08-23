@@ -27,8 +27,8 @@ You can install the CleanTalk JS client via Composer. Run the following command 
 ```bash
 npm i @kolasai/clean-talk-client
 ```
-GitHub.com: [https://github.com/kolasai/clean-talk-js-client](https://github.com/kolasai/clean-talk-js-client)
-NPMjs.com: [https://www.npmjs.com/package/@kolasai/clean-talk-client](https://www.npmjs.com/package/@kolasai/clean-talk-client)
+- GitHub.com: [https://github.com/kolasai/clean-talk-js-client](https://github.com/kolasai/clean-talk-js-client)
+- NPMjs.com: [https://www.npmjs.com/package/@kolasai/clean-talk-client](https://www.npmjs.com/package/@kolasai/clean-talk-client)
 
 ## Authentication
 
