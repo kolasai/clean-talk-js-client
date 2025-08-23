@@ -1,11 +1,8 @@
-import KolasAiOAuthClient from './src/KolasAiOAuthClient';
-import CleanTalkPredictionClient from './src/CleanTalkPredictionClient';
-import PredictRequest from './src/PredictRequest';
-import Message from './src/Message';
+import { KolasAiOAuthClient, CleanTalkPredictionClient, PredictRequest, Message } from '@kolasai/clean-talk-client';
 
-const YOUR_PROJECT_ID = '11';
-const YOUR_CLIENT_ID = '4';
-const YOUR_CLIENT_SECRET = 'zYFtjzSv2JKvAE6cjojxuGyjcYsAi6Fxmiv4rrjF';
+const YOUR_PROJECT_ID = '';
+const YOUR_CLIENT_ID = '';
+const YOUR_CLIENT_SECRET = '';
 
 // @ts-ignore
 async function main() {
