@@ -1,6 +1,6 @@
 {
   "name": "@kolasai/clean-talk-client",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This repository hosts the js client for Kolas.Ai's Clean Talk public API, making it easy for developers to integrate Kolas.Ai’s machine learning services into your applications.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
